@@ -7,6 +7,56 @@
   <meta name="description" content="Thornmind designs artificial intelligence and collects high-quality datasets to train it, transparently and responsibly.">
   <link rel="icon" type="image/svg+xml" href="../logo-thornmind.svg">
   <link rel="preload" href="../fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="canonical" href="https://thornmind.it/en/">
+  <meta name="theme-color" content="#2E86AB">
+  <link rel="apple-touch-icon" href="../logo-thornmind.png">
+
+  <!-- Anteprima quando il link viene condiviso (WhatsApp, LinkedIn, Facebook, X…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thornmind">
+  <meta property="og:title" content="Thornmind — Artificial intelligence and open datasets">
+  <meta property="og:description" content="Thornmind designs artificial intelligence and collects high-quality datasets to train it, transparently and responsibly.">
+  <meta property="og:url" content="https://thornmind.it/en/">
+  <meta property="og:image" content="https://thornmind.it/og-image-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Thornmind">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Dati strutturati: spiegano a Google chi è Thornmind -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://thornmind.it/#organization",
+      "name": "Thornmind",
+      "url": "https://thornmind.it/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://thornmind.it/logo-thornmind.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "info@thornmind.it",
+      "description": "A non-commercial research project that develops artificial intelligence and collects datasets to train it."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thornmind.it/en/#website",
+      "name": "Thornmind",
+      "url": "https://thornmind.it/en/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://thornmind.it/#organization"
+      }
+    }
+  ]
+}
+  </script>
   <link rel="alternate" hreflang="it" href="https://thornmind.it/">
   <link rel="alternate" hreflang="en" href="https://thornmind.it/en/">
   <link rel="alternate" hreflang="x-default" href="https://thornmind.it/en/">
@@ -14,6 +64,7 @@
     // Language: if the visitor explicitly chose Italian with the IT/EN switch, go back to it.
     (function () {
       var p; try { p = localStorage.getItem('tm-lang'); } catch (e) {}
+      if (/bot|crawl|spider|slurp|google-|mediapartners|lighthouse|facebookexternalhit|preview/i.test(navigator.userAgent)) return;
       if (p === 'it') location.replace('../index.html' + location.hash);
     })();
   </script>
