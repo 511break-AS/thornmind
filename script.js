@@ -25,6 +25,7 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 // Rete neurale animata nello sfondo dell'hero
 (() => {
   const canvas = document.getElementById('net');
+  if (!canvas) return; // pagine senza hero (es. privacy)
   const ctx = canvas.getContext('2d');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let w, h, dpr, nodes = [], mouse = { x: -9999, y: -9999 }, raf;

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy e cookie — Thornmind</title>
+  <meta name="description" content="Informativa sul trattamento dei dati personali e sui cookie del sito thornmind.it.">
+  <link rel="icon" type="image/svg+xml" href="logo-thornmind.svg">
+  <link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="canonical" href="https://thornmind.it/privacy.html">
+  <meta name="theme-color" content="#2E86AB">
+  <link rel="apple-touch-icon" href="logo-thornmind.png">
+  <link rel="alternate" hreflang="it" href="https://thornmind.it/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://thornmind.it/en/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://thornmind.it/en/privacy.html">
+  <script>
+    // Lingua: italiano per chi ha il browser in italiano, inglese per tutti gli altri.
+    // Una scelta fatta a mano con il selettore IT/EN ha sempre la precedenza.
+    (function () {
+      var p; try { p = localStorage.getItem('tm-lang'); } catch (e) {}
+      var l = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+      // I motori di ricerca non vengono reindirizzati: devono poter leggere entrambe le lingue.
+      if (/bot|crawl|spider|slurp|google-|mediapartners|lighthouse|facebookexternalhit|preview/i.test(navigator.userAgent)) return;
+      if (p === 'en' || (!p && !/^it(-|$)/i.test(l))) location.replace('en/privacy.html' + location.hash);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css?v=20261110">
+</head>
+<body>
+  <!-- Logo Thornmind (da logo-thornmind.svg, senza sfondo) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="tm-logo" viewBox="0 0 240 240">
+      <g transform="translate(-43.5,40)">
+        <circle cx="190" cy="80" r="34" fill="#4FA6C9"/>
+        <g fill="none" stroke-linecap="round" stroke-width="6">
+          <line x1="148" y1="31.459" x2="148" y2="128.541" stroke="#2E86AB" stroke-width="4"/>
+          <line x1="122.043" y1="50" x2="122.043" y2="110" stroke="#2E86AB"/>
+          <line x1="106" y1="61.459" x2="106" y2="98.541" stroke="#59AECE"/>
+        </g>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ===== Header ===== -->
+  <header class="site">
+    <div class="wrap nav">
+      <a href="index.html" class="brand" aria-label="Thornmind, torna alla pagina principale">
+        <svg class="logo" viewBox="0 0 240 240" aria-hidden="true"><use href="#tm-logo"/></svg>
+        Thornmind
+      </a>
+      <button class="menu-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="menu">
+        <a href="index.html#missione">Missione</a>
+        <a href="index.html#lavoro">Cosa facciamo</a>
+        <a href="index.html#metodo">Metodo</a>
+        <a href="index.html#principi">Principi</a>
+        <div class="lang" role="group" aria-label="Lingua">
+          <a href="privacy.html" aria-current="page" lang="it" data-lang="it">IT</a>
+          <a href="en/privacy.html" lang="en" hreflang="en" data-lang="en">EN</a>
+        </div>
+        <a href="index.html#partecipa" class="btn btn-primary">Partecipa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="legal-hero">
+      <div class="wrap">
+        <span class="eyebrow">Informativa</span>
+        <h1>Privacy e cookie</h1>
+        <p class="updated">Ultimo aggiornamento: 10 novembre 2026</p>
+        <div class="summary">
+          <div><b>Nessun cookie</b>Il sito non usa cookie, statistiche né strumenti di tracciamento.</div>
+          <div><b>Dati minimi</b>Riceviamo dati personali solo se sei tu a scriverci.</div>
+          <div><b>Nessuna cessione</b>Non vendiamo né cediamo i tuoi dati a nessuno.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap legal-grid">
+      <nav class="toc" aria-label="Indice">
+        <span class="eyebrow">Indice</span>
+        <a href="#titolare">Titolare</a>
+        <a href="#dati">Dati trattati</a>
+        <a href="#finalita">Finalità e basi giuridiche</a>
+        <a href="#destinatari">Destinatari</a>
+        <a href="#trasferimenti">Trasferimenti extra UE</a>
+        <a href="#conservazione">Conservazione</a>
+        <a href="#cookie">Cookie</a>
+        <a href="#diritti">I tuoi diritti</a>
+        <a href="#altro">Altre informazioni</a>
+        <a href="#extra-ue">Visitatori fuori dall'UE</a>
+        <a href="#modifiche">Modifiche</a>
+      </nav>
+
+      <article class="legal-body">
+        <p>
+          Questa informativa spiega come vengono trattati i dati personali di chi visita il sito
+          <strong>thornmind.it</strong> o scrive all'indirizzo <strong>info@thornmind.it</strong>, ai sensi
+          dell'articolo 13 del Regolamento (UE) 2016/679 («GDPR») e del Codice in materia di protezione
+          dei dati personali (D.lgs. 196/2003).
+        </p>
+
+        <h2 id="titolare"><span class="n">01</span> Titolare del trattamento</h2>
+        <p>
+          Thornmind è un progetto di ricerca senza finalità commerciali. Il titolare del trattamento è la
+          persona che lo promuove:
+        </p>
+        <div class="card-note">
+          <strong>Alberto Sanfelice</strong><br>
+          Email: <a href="mailto:info@thornmind.it">info@thornmind.it</a><br>
+          PEC: <a href="mailto:alberto.sanfelice@pec.it">alberto.sanfelice@pec.it</a>
+        </div>
+        <p>
+          Non è stato nominato un responsabile della protezione dei dati (DPO), perché non è obbligatorio
+          per i trattamenti descritti in questa informativa.
+        </p>
+
+        <h2 id="dati"><span class="n">02</span> Quali dati trattiamo</h2>
+        <h3>Dati di navigazione</h3>
+        <p>
+          Quando visiti il sito, il server che lo ospita (GitHub) riceve automaticamente alcuni dati tecnici,
+          come avviene per qualsiasi sito web: indirizzo IP, tipo di browser e di sistema operativo, pagina
+          richiesta, data e ora della visita, pagina di provenienza. Questi dati servono a far funzionare il
+          sito e a proteggerlo da abusi. Thornmind non vi ha accesso e non li usa per identificare i visitatori.
+        </p>
+        <h3>Dati che ci invii via email</h3>
+        <p>
+          Se ci scrivi, trattiamo il tuo indirizzo email, il tuo nome e le informazioni che decidi di
+          includere nel messaggio. Ti chiediamo di non inviarci dati particolari (ad esempio dati sulla salute)
+          se non sono strettamente necessari.
+        </p>
+        <h3>Preferenza di lingua</h3>
+        <p>
+          Se scegli la lingua con il selettore IT/EN, il tuo browser memorizza questa scelta. I dettagli sono
+          nella sezione <a href="#cookie">Cookie e tecnologie simili</a>.
+        </p>
+
+        <h2 id="finalita"><span class="n">03</span> Finalità e basi giuridiche</h2>
+        <ul>
+          <li>
+            <strong>Rispondere ai tuoi messaggi</strong> e gestire proposte di dataset o di collaborazione.
+            Base giuridica: la tua richiesta (art. 6, par. 1, lett. b GDPR) e il nostro legittimo interesse a
+            risponderti (lett. f).
+          </li>
+          <li>
+            <strong>Far funzionare il sito e garantirne la sicurezza.</strong>
+            Base giuridica: legittimo interesse (art. 6, par. 1, lett. f GDPR).
+          </li>
+          <li>
+            <strong>Rispettare obblighi di legge</strong> o difendere un diritto in sede giudiziaria, se
+            necessario. Base giuridica: obbligo legale (lett. c) e legittimo interesse (lett. f).
+          </li>
+        </ul>
+        <p>Non usiamo i tuoi dati per pubblicità, marketing o profilazione.</p>
+
+        <h2 id="destinatari"><span class="n">04</span> A chi vengono comunicati</h2>
+        <ul>
+          <li>
+            <strong>GitHub, Inc.</strong> (Stati Uniti), che ospita il sito tramite il servizio GitHub Pages e
+            tratta i dati di navigazione secondo la propria
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">informativa sulla privacy</a>.
+          </li>
+          <li>
+            <strong>Register.it S.p.A.</strong> (Italia), che fornisce il servizio di posta elettronica per
+            l'indirizzo info@thornmind.it, in qualità di responsabile del trattamento.
+          </li>
+          <li>Autorità pubbliche, solo se richiesto dalla legge.</li>
+        </ul>
+        <p>I dati non vengono venduti, ceduti o diffusi.</p>
+
+        <h2 id="trasferimenti"><span class="n">05</span> Trasferimenti fuori dall'Unione europea</h2>
+        <p>
+          GitHub, Inc. ha sede negli Stati Uniti. Il trasferimento dei dati di navigazione avviene sulla base
+          della decisione di adeguatezza della Commissione europea del 10 luglio 2023 relativa all'EU-U.S. Data
+          Privacy Framework, a cui GitHub aderisce, e delle clausole contrattuali standard approvate dalla
+          Commissione. I dati delle email restano presso Register.it, in Italia.
+        </p>
+
+        <h2 id="conservazione"><span class="n">06</span> Per quanto tempo li conserviamo</h2>
+        <ul>
+          <li>
+            <strong>Email:</strong> per il tempo necessario a gestire la tua richiesta e poi per
+            <strong>12 mesi</strong> dalla chiusura della conversazione. Se nasce una collaborazione, le
+            conserviamo per la sua durata. Trascorsi questi periodi le cancelliamo, salvo obblighi di legge.
+          </li>
+          <li>
+            <strong>Dati di navigazione:</strong> per i tempi stabiliti da GitHub nella propria informativa.
+          </li>
+          <li>
+            <strong>Preferenza di lingua:</strong> resta nel tuo browser finché non la cancelli.
+          </li>
+        </ul>
+
+        <h2 id="cookie"><span class="n">07</span> Cookie e tecnologie simili</h2>
+        <p>
+          Il sito <strong>non usa cookie</strong>, né propri né di terze parti. Non usa strumenti di statistica,
+          pulsanti dei social network, video o mappe incorporati. Font, immagini e animazioni sono ospitati
+          sul sito stesso, quindi aprire le pagine non comporta l'invio di dati ad altri servizi.
+        </p>
+        <p>
+          L'unica informazione salvata sul tuo dispositivo è la <strong>lingua che scegli</strong> con il
+          selettore IT/EN. Viene registrata nella memoria locale del browser (<em>localStorage</em>) con il nome
+          <code>tm-lang</code> e il valore <code>it</code> oppure <code>en</code>, solo dopo che hai cliccato
+          sul selettore. Non viene mai inviata a noi né ad altri e non permette di identificarti.
+        </p>
+        <p>
+          Si tratta di uno strumento tecnico, necessario a fornirti il servizio che hai chiesto (ricordare la
+          lingua). Per questo non richiede il tuo consenso (art. 122 del Codice privacy e Linee guida del
+          Garante sui cookie del 10 giugno 2021). Puoi cancellarla in qualsiasi momento eliminando i dati
+          del sito dalle impostazioni del browser.
+        </p>
+
+        <h2 id="diritti"><span class="n">08</span> I tuoi diritti</h2>
+        <p>In qualsiasi momento puoi chiedere:</p>
+        <ul>
+          <li>di <strong>accedere</strong> ai tuoi dati e riceverne una copia (art. 15 GDPR);</li>
+          <li>di <strong>correggerli</strong> o completarli (art. 16);</li>
+          <li>di <strong>cancellarli</strong> (art. 17);</li>
+          <li>di <strong>limitarne</strong> il trattamento (art. 18);</li>
+          <li>di riceverli in un formato leggibile da un computer (<strong>portabilità</strong>, art. 20);</li>
+          <li>di <strong>opporti</strong> al trattamento basato sul legittimo interesse (art. 21).</li>
+        </ul>
+        <p>
+          Per esercitare questi diritti scrivi a <a href="mailto:info@thornmind.it">info@thornmind.it</a>
+          oppure, se preferisci un recapito con valore legale, alla PEC
+          <a href="mailto:alberto.sanfelice@pec.it">alberto.sanfelice@pec.it</a>. Ti risponderemo entro un mese.
+        </p>
+        <p>
+          Se ritieni che il trattamento violi la normativa, puoi presentare un reclamo al
+          <strong>Garante per la protezione dei dati personali</strong>
+          (<a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>) oppure all'autorità
+          di controllo del Paese in cui vivi o lavori.
+        </p>
+
+        <h2 id="altro"><span class="n">09</span> Altre informazioni</h2>
+        <ul>
+          <li>
+            <strong>Facoltatività:</strong> scriverci è una tua libera scelta. Senza un indirizzo email non
+            possiamo però risponderti.
+          </li>
+          <li>
+            <strong>Decisioni automatizzate:</strong> non prendiamo decisioni basate unicamente su trattamenti
+            automatizzati e non facciamo profilazione.
+          </li>
+          <li>
+            <strong>Minori:</strong> il sito non è rivolto ai minori di 14 anni. Se hai meno di 14 anni, non
+            inviarci dati personali senza il consenso di un genitore.
+          </li>
+          <li>
+            <strong>Dataset e ricerca:</strong> questa informativa riguarda solo il sito e i contatti via email.
+            La raccolta di dati per i dataset sarà regolata da informative specifiche, fornite a chi partecipa
+            prima di ogni raccolta.
+          </li>
+        </ul>
+
+        <h2 id="extra-ue"><span class="n">10</span> Visitatori fuori dall'Unione europea</h2>
+        <p>
+          Applichiamo a tutti i visitatori, ovunque si trovino, le tutele previste dal GDPR. In particolare,
+          per i residenti negli Stati Uniti: non vendiamo né condividiamo dati personali, non li usiamo per
+          pubblicità mirata e non raccogliamo dati sensibili tramite il sito. Poiché non tracciamo i visitatori,
+          i segnali come <em>Global Privacy Control</em> o <em>Do Not Track</em> sono rispettati di fatto.
+        </p>
+
+        <h2 id="modifiche"><span class="n">11</span> Modifiche a questa informativa</h2>
+        <p>
+          Possiamo aggiornare questa informativa, ad esempio se aggiungiamo nuove funzioni al sito. La data
+          dell'ultimo aggiornamento è indicata in cima alla pagina.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <a href="index.html" class="brand"><svg class="logo" viewBox="0 0 240 240" aria-hidden="true"><use href="#tm-logo"/></svg> Thornmind</a>
+      <nav>
+        <a href="index.html#missione">Missione</a>
+        <a href="index.html#lavoro">Cosa facciamo</a>
+        <a href="index.html#principi">Principi</a>
+        <a href="index.html#contatti">Contatti</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
+      <small>© <span id="y"></span> Thornmind</small>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20261110"></script>
+</body>
+</html>
