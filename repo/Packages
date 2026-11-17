@@ -20,25 +20,31 @@ Author: Alberto Sanfelice
 Name: Siri4gain AI Model
 
 Package: com.siri4gain.siri
-Version: 1.0.4
+Version: 1.0.5
 Architecture: iphoneos-arm
 Maintainer: Siri4gain
 Installed-Size: 87364
 Depends: bash, mobilesubstrate, preferenceloader, com.siri4gain.llm (>= 1.0.4), firmware (>= 6.0), firmware (<< 7.0)
-Filename: debs/com.siri4gain.siri_1.0.4_iphoneos-arm.deb
-Size: 78274546
-MD5sum: 413e107b14b928b3c38b2dd9ecca8a6d
-SHA1: 3be6a2ce2decf588b66fb5bbd25adda7da5d6f10
-SHA256: 1d817d5904791a194c7fd7b1294bd3cfc798d86114de8c7bc47d3a1ca93d2440
+Filename: debs/com.siri4gain.siri_1.0.5_iphoneos-arm.deb
+Size: 78274702
+MD5sum: 4581bcfe6176485609f37cd8762718d4
+SHA1: 2c0c1d98cb0e85bae982dddcc405841265a81c95
+SHA256: ee39ef3ccdccf92ae6b8cba75bea021d042184d951a86db0d14da4edb5233088
 Section: Tweaks
 Priority: optional
-Description: Brings Siri and keyboard dictation back to life, fully offline.
- Siri4gain runs a local Siri server on your iPhone: speech recognition with OpenAI
- Whisper (tiny, on-device), the native Siri interface and voice, timers, alarms,
- time around the world, opening apps and follow-up questions in the 8 original
- Siri languages. No internet connection needed.
+Description: FOR IPHONE 4S ON iOS 6.1.3 - offline Siri and dictation.
+ FOR IPHONE 4S ON iOS 6.1.3 ONLY. Siri4gain has only been tested on an iPhone 4S
+ running iOS 6.1.3: installing it on other devices or iOS versions is not recommended.
+ .
+ Brings Siri and keyboard dictation back to life, fully offline. Siri4gain runs a
+ local Siri server on your iPhone: speech recognition with OpenAI Whisper (tiny,
+ on-device), the native Siri interface and voice, timers, alarms, time around the
+ world, opening apps and follow-up questions in the 8 original Siri languages.
+ No internet connection needed.
+ .
  Optional on-device AI answers (SmolLM2-135M, English only) can be enabled in
- Settings > Siri4gain. Requires a device that supports Siri (iPhone 4S) on iOS 6.
+ Settings > Siri4gain.
 Author: Alberto Sanfelice
+Depiction: http://thornmind.it/repo/depictions/com.siri4gain.siri.html
 Name: Siri4gain
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Siri4gain</title>
+<!-- Cydia depiction. Shown by the iOS 6 UIWebView: keep CSS old-WebKit friendly (-webkit- prefixes, no flexbox gap). -->
+<style>
+  body { margin: 0; padding: 12px 10px 24px; background: #c5ccd4; font: 15px/1.4 "Helvetica Neue", Helvetica, sans-serif; color: #222; -webkit-text-size-adjust: none; }
+  .warn { margin: 0 0 12px; padding: 14px 12px; border: 1px solid #8a1f14; border-radius: 10px; color: #fff; text-align: center;
+          background: #c0392b; background-image: -webkit-linear-gradient(top, #e0533f, #b02a1b);
+          box-shadow: 0 1px 0 rgba(255,255,255,.6), inset 0 1px 0 rgba(255,255,255,.35); text-shadow: 0 -1px 0 rgba(0,0,0,.35); }
+  .warn h1 { margin: 0 0 6px; font-size: 26px; line-height: 1.15; font-weight: bold; }
+  .warn p { margin: 0; font-size: 15px; }
+  .card { margin: 0 0 12px; padding: 12px; background: #fff; border: 1px solid #a7adb5; border-radius: 10px; box-shadow: 0 1px 0 rgba(255,255,255,.7); }
+  .head { text-align: center; }
+  .head img { width: 96px; height: 96px; }
+  .head h2 { margin: 6px 0 2px; font-size: 22px; }
+  .head p { margin: 0; color: #555; }
+  h3 { margin: 0 0 6px; font-size: 16px; color: #4c566c; text-shadow: 0 1px 0 #fff; }
+  .card p { margin: 0 0 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .small { font-size: 13px; color: #555; }
+</style>
+</head>
+<body>
+  <div class="warn">
+    <h1>For iPhone 4S<br>on iOS 6.1.3</h1>
+    <p>Siri4gain has only been tested on an iPhone 4S running iOS 6.1.3. Installing it on other devices or iOS versions is not recommended.</p>
+  </div>
+
+  <div class="card head">
+    <img src="logo.png" alt="">
+    <h2>Siri4gain</h2>
+    <p>The original iOS 6 Siri and dictation, back to life and fully offline.</p>
+  </div>
+
+  <div class="card">
+    <h3>What it does</h3>
+    <p>Apple's iOS 6 Siri servers are gone. Siri4gain runs a small Siri server on the iPhone itself, so the stock Siri and the keyboard dictation key work again, with no internet connection.</p>
+    <p>Speech recognition runs on the phone with OpenAI Whisper tiny, in the 8 original Siri languages: English, Italian, French, German, Spanish, Japanese, Chinese and Korean.</p>
+    <p>Siri tells the time and date, also in other cities, sets timers and alarms, opens apps and understands follow-ups like "And in Tokyo?". The full command list is in Settings &gt; Siri4gain.</p>
+  </div>
+
+  <div class="card">
+    <h3>On-device AI (optional)</h3>
+    <p>Siri can answer other questions with SmolLM2-135M, a small language model that runs on the phone. It is off by default: turn on LLM Answers in Settings &gt; Siri4gain. Its answers may be inaccurate or made up, and it only speaks English.</p>
+  </div>
+
+  <div class="card">
+    <h3>Notes</h3>
+    <p>Needs about 175 MB of free space. Turn Siri on in Settings &gt; General &gt; Siri after installing. No certificates or hosts file changes are needed.</p>
+    <p class="small">By Alberto Sanfelice. MIT License. Not affiliated with Apple.</p>
+  </div>
+</body>
+</html>
