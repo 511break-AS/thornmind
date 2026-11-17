@@ -1,0 +1,8 @@
+Origin: Siri4gain
+Label: Siri4gain
+Suite: stable
+Version: 1.0.4
+Codename: ios6
+Architectures: iphoneos-arm
+Components: main
+Description: Offline Siri and dictation for iOS 6

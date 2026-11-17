@@ -1,0 +1,44 @@
+Package: com.siri4gain.llm
+Version: 1.0.4
+Architecture: iphoneos-arm
+Maintainer: Siri4gain
+Installed-Size: 89756
+Depends: firmware (>= 6.0)
+Replaces: com.siri4gain.siri (<< 1.0.4)
+Filename: debs/com.siri4gain.llm_1.0.4_iphoneos-arm.deb
+Size: 85864048
+MD5sum: ac9c17ba19d49e8cc7114b575349653c
+SHA1: 4fbe3e28aecbc28653a726067d664d457d1d450a
+SHA256: 526d22518a6ec87f080ce360156bda25fd61055daa5b3e09fa5b10ae33f6e782
+Section: Addons (Siri4gain)
+Priority: optional
+Description: SmolLM2-135M-Instruct language model for Siri4gain.
+ On-device language model (Hugging Face, Apache License 2.0) used by Siri4gain for
+ optional AI answers. Installed automatically with Siri4gain; the answers stay off
+ until you enable LLM Answers in Settings > Siri4gain.
+Author: Alberto Sanfelice
+Name: Siri4gain AI Model
+
+Package: com.siri4gain.siri
+Version: 1.0.4
+Architecture: iphoneos-arm
+Maintainer: Siri4gain
+Installed-Size: 87364
+Depends: bash, mobilesubstrate, preferenceloader, com.siri4gain.llm (>= 1.0.4), firmware (>= 6.0), firmware (<< 7.0)
+Filename: debs/com.siri4gain.siri_1.0.4_iphoneos-arm.deb
+Size: 78274546
+MD5sum: 413e107b14b928b3c38b2dd9ecca8a6d
+SHA1: 3be6a2ce2decf588b66fb5bbd25adda7da5d6f10
+SHA256: 1d817d5904791a194c7fd7b1294bd3cfc798d86114de8c7bc47d3a1ca93d2440
+Section: Tweaks
+Priority: optional
+Description: Brings Siri and keyboard dictation back to life, fully offline.
+ Siri4gain runs a local Siri server on your iPhone: speech recognition with OpenAI
+ Whisper (tiny, on-device), the native Siri interface and voice, timers, alarms,
+ time around the world, opening apps and follow-up questions in the 8 original
+ Siri languages. No internet connection needed.
+ Optional on-device AI answers (SmolLM2-135M, English only) can be enabled in
+ Settings > Siri4gain. Requires a device that supports Siri (iPhone 4S) on iOS 6.
+Author: Alberto Sanfelice
+Name: Siri4gain
+
